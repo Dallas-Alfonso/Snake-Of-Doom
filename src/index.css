@@ -1,13 +1,128 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background-image: url(./images/MainBackGround.jpg); /*https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b6face33-03e7-489d-b2c0-35b4e4b0ccfc/d8hi65f-3cafc0af-de6b-4163-be31-e9d97b04628f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2ZmFjZTMzLTAzZTctNDg5ZC1iMmMwLTM1YjRlNGIwY2NmY1wvZDhoaTY1Zi0zY2FmYzBhZi1kZTZiLTQxNjMtYmUzMS1lOWQ5N2IwNDYyOGYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ceX83BZf-Oy5OdS_QLxMmr4W7iaMKij1MUWf0trbRnY https://external-preview.redd.it/VpbBWEZnEpWOjFOon4xxvCkkqKyBOd7JOi2iu3Jpaac.jpg?auto=webp&s=3d278aaa829dbd73d145bce918cc85293fcfe905 https://dungeoncrawlernetwork.com/wp-content/uploads/2015/06/Torch_Tunnel.jpg https://i.pinimg.com/originals/d5/7b/b4/d57bb4b52b52b6e0bb24487162b12f6e.jpg*/
+  background-repeat:no-repeat;
+  background-position:center;
+  background-attachment:fixed;
+  background-size:cover;  /*revisit to see if you need to take out some of these.. Not required*/
+
+
+  /* !! A method to Change background color of the whole page!!
+  background-color: #11ee44e1e; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*
+.game-outside{
+  background-image: url("https://dungeoncrawlernetwork.com/wp-content/uploads/2015/06/Torch_Tunnel.jpg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-attachment:fixed;
+  background-size:cover;
+}
+*/
+
+.game-area {
+  position: relative;
+  margin: 0 auto; /* Controlls distance of Game-area play from top of page */
+  width: 550px;
+  height: 550px;
+  border:15px solid transparent;
+  border-image: url(./images/BorderDesign.jpg) 25% round;
+  box-shadow: 0 0 10px #abbfc0;
+  /*
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), /*EEDIT LATER ON..  Make it look better.  Or change method to make main POP
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  */
+  /* /*background-color: 	#696969; */
+  background-image: url(./images/snakeBackGround.jpg);  /*https://i.pinimg.com/originals/e3/0e/f6/e30ef6db372d9585c71dae40f038397d.jpg http://getwallpapers.com/wallpaper/full/f/4/f/335996.jpg*/
+  background-size: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  
+}
+
+/*
+.game-area{
+  position: relative;
+  width: 600px;
+  height: 500px;
+  border: 2px solid #dc042c;
+  border-radius: 10px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 10px #abbfc0;
+}
+*/
+
+/*  Small To Large Screens  */
+@media screen and (max-width: 700px) {
+  .game-area{
+    position: relative;
+    width: 280px;
+    height:300px;
+    margin-bottom:50px;
+    margin-top:40px;
+  }
+}
+
+/*  Tablet to Laptop(m) */
+@media screen and (min-width: 768px) {
+  .game-area{
+    position: relative;
+    width: 450px;
+    height:400px;
+    margin-bottom:50px;
+    margin-top: 40px;
+    
+  }
+}
+
+  .snake {
+    width: 12px;
+    height: 12px;
+  }
+
+.snake {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background-color: #fff;
+  /*border: 2px solid #fff;*/
+  z-index: 2;
+}
+
+/*
+.food{
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background: rgb(139, 0, 0);
+  border: 2px solid #fff;
+  z-index: 1;
+}
+*/
+
+.food {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .food {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: white;
+    border-radius: 20px;
+    z-index: 1;
+  }
 }
