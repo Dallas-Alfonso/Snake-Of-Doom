@@ -1,56 +1,21 @@
-
-
-
-.buttonContainer{
-   
-    margin:o auto;
-    
-    /*
-    height:0;
-    padding-bottom: 56.25;
-    position:relative;
-    display: inline-block;
-    */
-}
-
 .upwards,
 .downwards {
-    
     text-align: center;
-
-
-
-    /*
-    position: relative;
-    /*left:762px; *//*Higher number goes to the right.*/
-    /*
-    margin-left:762px;
-    display: flex;
-    justify-content:center;
-    flex-flow: row wrap;
-    */
 }
 
 .sideways {
-   
-    
     text-align: center;
-    /*
-    position: relative;
-    left: 640px;
-    margin: 0px;  /* Determines how far Up and Down are from Left and Right || Can BE DELETED */
 }
 
 .left,
 .right {
     margin: 50px;
     padding: 15px;
-    /*border: 0px solid;*/
     border-radius: 10px;
     border: 2px solid transparent;
-    border-image: url(https://s3.amazonaws.com/cup-images/marlo-socolov/large/cup830285_70864.jpg) 25% round;
+    border-image: url(./images/BorderDesign.jpg) 25% round;
     color: #dc042c;
-    background: #1e1e1e;
+    background: #181818;
     box-shadow: 0 0 10px #abbfc0;/*5px -5px 10px rgba(0,0,0,0.6);*/
     font-family:  "papyrus", Courier, monospace;
     font-size:1.5em;
@@ -82,9 +47,9 @@
     /*border: 0px solid;*/
     border-radius: 10px;
     border: 2px solid transparent;
-    border-image: url(https://s3.amazonaws.com/cup-images/marlo-socolov/large/cup830285_70864.jpg) 25% round;
+    border-image: url(./images/BorderDesign.jpg) 25% round;
     color: #dc042c;
-    background: #1e1e1e;
+    background: #181818;
     box-shadow: 0 0 10px #abbfc0; /*5px -5px 10px rgba(0,0,0,0.6);*/
     font-family:  "papyrus", Courier, monospace;
     font-size:1.5em;

@@ -3,22 +3,8 @@ body{
   background-repeat:no-repeat;
   background-position:center;
   background-attachment:fixed;
-  background-size:cover;  /*revisit to see if you need to take out some of these.. Not required*/
-
-
-  /* !! A method to Change background color of the whole page!!
-  background-color: #11ee44e1e; */
-}
-
-/*
-.game-outside{
-  background-image: url("https://dungeoncrawlernetwork.com/wp-content/uploads/2015/06/Torch_Tunnel.jpg");
-  background-repeat:no-repeat;
-  background-position:center;
-  background-attachment:fixed;
   background-size:cover;
 }
-*/
 
 .game-area {
   position: relative;
@@ -27,37 +13,10 @@ body{
   height: 550px;
   border:15px solid transparent;
   border-image: url(./images/BorderDesign.jpg) 25% round;
-  box-shadow: 0 0 10px #abbfc0;
-  /*
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), /*EEDIT LATER ON..  Make it look better.  Or change method to make main POP
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12);
-  */
-  /* /*background-color: 	#696969; */
-  background-image: url(./images/snakeBackGround.jpg);  /*https://i.pinimg.com/originals/e3/0e/f6/e30ef6db372d9585c71dae40f038397d.jpg http://getwallpapers.com/wallpaper/full/f/4/f/335996.jpg*/
-  background-size: 800px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-  
+  box-shadow: 0 0 20px #abbfc0;
+  background-image: url(./images/newMainSnakeBackGround.png);  /* ./images/snakeBackGround.jpg   https://i.pinimg.com/originals/e3/0e/f6/e30ef6db372d9585c71dae40f038397d.jpg http://getwallpapers.com/wallpaper/full/f/4/f/335996.jpg*/
+  background-size: 900px; 
 }
-
-/*
-.game-area{
-  position: relative;
-  width: 600px;
-  height: 500px;
-  border: 2px solid #dc042c;
-  border-radius: 10px;
-  margin: 50px auto;
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 0 0 10px #abbfc0;
-}
-*/
 
 /*  Small To Large Screens  */
 @media screen and (max-width: 700px) {
@@ -82,35 +41,18 @@ body{
   }
 }
 
-  .snake {
-    width: 12px;
-    height: 12px;
-  }
-
 .snake {
   position: absolute;
-  width: 2%;
-  height: 2%;
+  width: 2.8%;
+  height: 2.8%;
   background-color: #fff;
-  /*border: 2px solid #fff;*/
   z-index: 2;
 }
 
-/*
-.food{
-  position: absolute;
-  width: 2%;
-  height: 2%;
-  background: rgb(139, 0, 0);
-  border: 2px solid #fff;
-  z-index: 1;
-}
-*/
-
 .food {
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 2.8%;
+  height: 2.8%;
   background-color: white;
   border-radius: 20px;
   z-index: 1;

@@ -3,7 +3,7 @@ import "./Button.css";
 
 const Button = ({ onUp, onDown, onLeft, onRight }) => {
     return (
-        <div className="buttonContainer">
+        <div className="button">
             <div className="upwards">
                 <input className="up" onClick={onUp} type="button" value="U"/>
             </div>

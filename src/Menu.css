@@ -1,27 +1,23 @@
 .wrapper {
     position: relative;
-    width:250px;
+    width:270px;
     height:115px;
     border:3px solid transparent;
-    padding: 0px;  /* Controlls hpw big Padding is around Game Area.  Can delete??*/
-    border-image: url(https://s3.amazonaws.com/cup-images/marlo-socolov/large/cup830285_70864.jpg) 25% round;
+    border-image: url(./images/BorderDesign.jpg) 25% round;
     border-radius: 10px;
     margin:0px auto;
     margin-top:200px; /*lower number moves position of wrapper higher*/
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    box-shadow: 0 0 10px #abbfc0; 
+    box-shadow: 0 0 15px #abbfc0; 
 }
 
 .start {
     margin:30px;
-    background:#303030;
-    /*background-image: url(https://s3.amazonaws.com/cup-images/marlo-socolov/large/cup830285_70864.jpg);
-    background-size: 30px;*/
+    background:#181818;
     color: #e40931;
-    border-radius:7px;
-    border:0px;
+    border-radius:10px;
     padding:7px;
     font-size:1.5em;
     box-shadow:0 0 10px #abbfc0;
@@ -40,22 +36,3 @@ color:#b30f2d;
 
 
 
-/* figure out color of button when it changes on hover..
-    Add a "buttonpressing" element?..
-    "how to make button pop on hover(and change color?)
-    */
-
-
-/*
-.right {
-    margin: 50px;
-    padding: 15px;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    border-image: url(https://s3.amazonaws.com/cup-images/marlo-socolov/large/cup830285_70864.jpg) 25% round;
-    color: #dc042c;
-    background: #1e1e1e;
-    box-shadow: 0 0 10px #abbfc0;/*5px -5px 10px rgba(0,0,0,0.6);
-    font-family:  "papyrus", Courier, monospace;
-    font-size:1.5em;
-*/
