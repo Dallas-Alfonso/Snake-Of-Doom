@@ -9,7 +9,9 @@
 
 .left,
 .right {
-    margin: 50px;
+    margin: 32px;
+    margin-top:5px;
+    margin-bottom:5px;
     padding: 15px;
     border-radius: 10px;
     border: 2px solid transparent;
