@@ -19,7 +19,7 @@ body{
 }
 
 /*  Small To Large Screens  */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
   .game-area{
     position: relative;
     width: 280px;
