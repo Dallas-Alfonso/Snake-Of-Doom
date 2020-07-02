@@ -4,7 +4,7 @@ An App to play the classic Snake Game
 
 ## Features
 
-- Fun/Scary design for to add to playing experience 
+- Fun/Scary design to enhance playing experience 
 - On Screen Buttons
 - Works on keyboard buttons too
 - Responsive
