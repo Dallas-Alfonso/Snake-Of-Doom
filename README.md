@@ -1,27 +1,28 @@
 # Snake Of Doom
 
-An App to play the classic Snake Game
+You are DOOMED to play Snake Of Doom forever.  Muahahaha!
+
+Live App: https://snake-of-doom.netlify.app/
 
 ## Features
 
-- Fun/Scary design to enhance playing experience 
-- On Screen Buttons
-- Works on keyboard buttons too
+- Functioning On Screen Buttons
 - Responsive
+- Fun
 
+![Snake App Gif](./src/images/SnakeOfDoom.gif)
 
-## Tech/Framework used
+## Set Up And Run Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Clone project locally
+2. In your CLI, run `npm install`
+4. On root file, use CLI to run `npm start`
+5. App running on `https://localhost:3000`
 
-## Installation
+## Technologies
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- React.JS
+- Html
+- CSS
+- JavaScript
+- Netlify
